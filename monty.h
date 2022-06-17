@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <string.h>
 
+#define DELIMATOR "\n\t\r "
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -54,19 +55,4 @@ void pint(stack_t **stack, unsigned int line_number);
 int find_opcode(stack_t **stack, char *opcode, int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 size_t lol(stack_t *h);
-
-void _add(stack_t **doubly, unsigned int line_number);
-void _sub(stack_t **doubly, unsigned int line_number);
-void _div(stack_t **doubly, unsigned int line_number);
-void _mul(stack_t **doubly, unsigned int line_number);
-void _mod(stack_t **doubly, unsigned int line_number);
-
-void _queue(stack_t **doubly, unsigned int line_number);
-void _stack(stack_t **doubly, unsigned int line_number);
-
-void _pchar(stack_t **doubly, unsigned int line_number);
-void _pstr(stack_t **doubly, unsigned int line_number);
-void _rotl(stack_t **doubly, unsigned int line_number);
-
-void _rotr(stack_t **doubly, unsigned int line_number);
 #endif
